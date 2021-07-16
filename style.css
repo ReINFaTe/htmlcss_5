@@ -23,6 +23,28 @@ body::-webkit-scrollbar {
   max-width: 1170px;
 }
 
+h3 {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #008ed6;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: none;
+  letter-spacing: normal;
+  color: #1a1a1a;
+  background-image: linear-gradient(to right, #008ed6 47%, transparent 47%, transparent 53%, #008ed6 53%);
+  background-position: bottom;
+  background-size: 42px 2px;
+  background-repeat: no-repeat;
+}
+
 header {
   height: 640px;
   overflow: hidden;
@@ -75,10 +97,13 @@ header .nav-menu li {
   margin-left: 20px;
   list-style: none;
   display: inline;
-  padding-bottom: 9px;
+  padding-bottom: 10px;
 }
 header .nav-menu li:hover {
-  border-bottom: #008ed6 2px solid;
+  background-image: linear-gradient(to right, #008ed6 47%, transparent 47%, transparent 53%, #008ed6 53%);
+  background-position: bottom;
+  background-size: 42px 2px;
+  background-repeat: no-repeat;
 }
 header .logo .ld {
   font-family: "Quicksand";
@@ -104,12 +129,8 @@ header .header-block {
   flex: 1 1 auto;
 }
 header .header-block .introduce h3 {
-  font-size: 14px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: #008ed6;
   margin-top: 38px;
+  text-align: unset;
 }
 header .header-block .introduce h1 {
   font-size: 48px;
@@ -155,5 +176,57 @@ header .header-block .header-pic {
 }
 header .header-block .header-pic img {
   margin-right: -14px;
-  margin-top: 1px;
+  margin-top: 0px;
+}
+
+.product-overview-block {
+  padding-bottom: 70px;
+  border-bottom: 2px solid #ededed;
+  padding-top: 62px;
+}
+.product-overview-block h2 {
+  margin-top: 10px;
+  padding-bottom: 37px;
+}
+.product-overview-block h2, .product-overview-block h3 {
+  text-align: center;
+}
+.product-overview-block .features {
+  margin-top: 73px;
+  column-gap: 30px;
+}
+.product-overview-block .features .features-item {
+  text-align: center;
+}
+.product-overview-block .features .features-item .features-img {
+  position: relative;
+  margin: 0 auto;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+}
+.product-overview-block .features .features-item .features-img img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.product-overview-block .features .features-item p {
+  margin-top: 34px;
+  margin-bottom: 14px;
+  font-size: 24px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #1a1a1a;
+}
+.product-overview-block .features .features-item span {
+  font-size: 18px;
+  line-height: 26px;
+  color: #999999;
+  display: block;
+  padding: 0 15px;
 }
