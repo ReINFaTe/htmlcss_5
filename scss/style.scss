@@ -1,6 +1,10 @@
-@import "../node_modules/bootstrap/scss/bootstrap";
+// @import "../node_modules/bootstrap/scss/bootstrap";
 
-$fa-font-path: "../node_modules/@fortawesome/fontawesome-free/webfonts/";
-@import "../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
-@import "../node_modules/@fortawesome/fontawesome-free/scss/regular.scss";
-@import "../node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
+// $fa-font-path: "../node_modules/@fortawesome/fontawesome-free/webfonts/";
+// @import "../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+// @import "../node_modules/@fortawesome/fontawesome-free/scss/regular.scss";
+// @import "../node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
+
+@import "fonts";
+@import "global";
+@import "header";

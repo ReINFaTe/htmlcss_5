@@ -1,0 +1,22 @@
+.row {
+    margin: 0;
+}
+.col,
+[class*="col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    &::-webkit-scrollbar {
+        width: 0;
+        background: transparent;
+    }
+}
+
+.container {
+    padding: 0;
+    max-width: 1170px;
+}
+
