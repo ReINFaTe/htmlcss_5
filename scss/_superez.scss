@@ -1,15 +1,16 @@
 .superez-block {
     background-color: #f2f2f2;
     padding-top: 33px;
+    height: 543px;
     .image {
         text-align: left;
         padding-right: 0px;
         img {
-            margin-left: 0px;
+            margin-left: -17px;
         }
     }
     .text {
-        padding-top: 00px;
+        margin-top: 98px;
         padding-left: 0px;
         * {
             text-align: left;
@@ -23,7 +24,7 @@
         }
         p {
             margin-top: 25px;
-            padding-right: 100px;
+            padding-right: 10px;
             margin-bottom: 25px;
             font-size: 18px;
             line-height: 26px;

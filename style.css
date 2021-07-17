@@ -304,16 +304,17 @@ header .header-block .header-pic img {
 .superez-block {
   background-color: #f2f2f2;
   padding-top: 33px;
+  height: 543px;
 }
 .superez-block .image {
   text-align: left;
   padding-right: 0px;
 }
 .superez-block .image img {
-  margin-left: 0px;
+  margin-left: -17px;
 }
 .superez-block .text {
-  padding-top: 0px;
+  margin-top: 98px;
   padding-left: 0px;
 }
 .superez-block .text * {
@@ -328,7 +329,7 @@ header .header-block .header-pic img {
 }
 .superez-block .text p {
   margin-top: 25px;
-  padding-right: 100px;
+  padding-right: 10px;
   margin-bottom: 25px;
   font-size: 18px;
   line-height: 26px;
@@ -336,4 +337,8 @@ header .header-block .header-pic img {
   text-transform: none;
   letter-spacing: normal;
   color: #999999;
+}
+
+.comments-block {
+  background-image: url(/img/prostokat.png);
 }
