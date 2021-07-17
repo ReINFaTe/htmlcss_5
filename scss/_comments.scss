@@ -1,3 +1,88 @@
 .comments-block {
-    background-image: url(/img/prostokat.png);
+    background: url(/img/prostokat.png) no-repeat;
+    background-size: cover;
+    background-position: 0px 1px;
+    height: 640px;
+    .container {
+        padding-top: 63px;
+        .owl-stage-outer {
+            margin-top: 87px;
+            min-height: 301px;
+            .owl-item {
+                p {
+                    margin-bottom: 0;
+                }
+                font-size: 24px;
+                line-height: 32px;
+                font-weight: 400;
+                color: #ffffff;
+                padding-right: 20px;
+                &:last-child{
+                    margin-right: 0 !important;
+                }
+                .item-text {
+                   font-style: italic;
+                   margin-bottom: 22px;
+                }
+                .user {
+                    display: flex;
+                    align-items: center;
+                    margin-left: 1px;
+                }
+                .user-avatar, .user-np-w {
+                    display: inline-block;
+                    margin-right: 24px;
+                }
+                .user-np-w {
+                    height: 59px;
+
+                }
+                .user-name {
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: #ffffff;
+                }
+                .user-position {
+                    font-size: 14px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    line-height: 22px;
+
+                }
+
+            }
+        }
+        .owl-dots {
+            .owl-dot {
+                span {
+                    width: 14px;
+                    height: 14px;
+                    border-radius: 50%;
+                    box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.2);
+                    border: 3px solid transparent;
+                    background: none;
+                    opacity: 1;
+                    margin: 5px 8px;
+                    &:hover {
+                        background: #fff; 
+                        border-color: #fff;
+                    }
+                }
+                &.active {
+                    span {
+                        background: #fff; 
+                        border-color: #fff;
+                    }
+                }
+//.bx-pager-link { display: block; width: 14px; height: 14px; border-radius: 50%; border: 3px solid transparent; font-size: 0; line-height: 0; text-indent: -4000px; box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.2); }
+
+            }
+        }
+    }
+    h2 {
+        margin-top: 10px;
+        color: #ffffff;
+        padding-bottom: 31px;
+    }
+
 }

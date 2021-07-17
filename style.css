@@ -324,11 +324,11 @@ header .header-block .header-pic img {
   margin-bottom: 10px;
 }
 .superez-block .text h2 {
-  padding-bottom: 27px;
+  padding-bottom: 28px;
   background-position: left bottom;
 }
 .superez-block .text p {
-  margin-top: 25px;
+  margin-top: 26px;
   padding-right: 10px;
   margin-bottom: 25px;
   font-size: 18px;
@@ -340,5 +340,78 @@ header .header-block .header-pic img {
 }
 
 .comments-block {
-  background-image: url(/img/prostokat.png);
+  background: url(/img/prostokat.png) no-repeat;
+  background-size: cover;
+  background-position: 0px 1px;
+  height: 640px;
+}
+.comments-block .container {
+  padding-top: 63px;
+}
+.comments-block .container .owl-stage-outer {
+  margin-top: 87px;
+  min-height: 301px;
+}
+.comments-block .container .owl-stage-outer .owl-item {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 400;
+  color: #ffffff;
+  padding-right: 20px;
+}
+.comments-block .container .owl-stage-outer .owl-item p {
+  margin-bottom: 0;
+}
+.comments-block .container .owl-stage-outer .owl-item:last-child {
+  margin-right: 0 !important;
+}
+.comments-block .container .owl-stage-outer .owl-item .item-text {
+  font-style: italic;
+  margin-bottom: 22px;
+}
+.comments-block .container .owl-stage-outer .owl-item .user {
+  display: flex;
+  align-items: center;
+  margin-left: 1px;
+}
+.comments-block .container .owl-stage-outer .owl-item .user-avatar, .comments-block .container .owl-stage-outer .owl-item .user-np-w {
+  display: inline-block;
+  margin-right: 24px;
+}
+.comments-block .container .owl-stage-outer .owl-item .user-np-w {
+  height: 59px;
+}
+.comments-block .container .owl-stage-outer .owl-item .user-name {
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff;
+}
+.comments-block .container .owl-stage-outer .owl-item .user-position {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 22px;
+}
+.comments-block .container .owl-dots .owl-dot span {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.2);
+  border: 3px solid transparent;
+  background: none;
+  opacity: 1;
+  margin: 5px 8px;
+}
+.comments-block .container .owl-dots .owl-dot span:hover {
+  background: #fff;
+  border-color: #fff;
+}
+.comments-block .container .owl-dots .owl-dot.active span {
+  background: #fff;
+  border-color: #fff;
+}
+.comments-block h2 {
+  margin-top: 10px;
+  color: #ffffff;
+  padding-bottom: 31px;
 }
