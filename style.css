@@ -230,3 +230,110 @@ header .header-block .header-pic img {
   display: block;
   padding: 0 15px;
 }
+
+.beautiful-block {
+  height: 705px;
+  padding-top: 65px;
+}
+.beautiful-block .image {
+  text-align: left;
+  padding-right: 0px;
+}
+.beautiful-block .image img {
+  margin-left: 20px;
+}
+.beautiful-block .text {
+  padding-top: 51px;
+  padding-left: 29px;
+}
+.beautiful-block .text h3 {
+  margin-bottom: 10px;
+}
+.beautiful-block .text h2 {
+  padding-bottom: 27px;
+  background-position: left bottom;
+}
+.beautiful-block .text p {
+  margin-top: 25px;
+  padding-right: 95px;
+  margin-bottom: 25px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: normal;
+  color: #999999;
+}
+.beautiful-block .text ul {
+  padding-left: 0px;
+}
+.beautiful-block .text ul li {
+  font-size: 18px;
+  line-height: 36px;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: normal;
+  color: #1b1b1b;
+}
+.beautiful-block .text ul li:nth-child(1) {
+  padding-left: 25px;
+  list-style: none;
+  background: url(/img/icons/cup.png) no-repeat left;
+}
+.beautiful-block .text ul li:nth-child(2) {
+  padding-left: 25px;
+  list-style: none;
+  background: url(/img/icons/mouse.png) no-repeat;
+  background-position: 3px 50%;
+}
+.beautiful-block .text ul li:nth-child(3) {
+  padding-left: 25px;
+  list-style: none;
+  background: url(/img/icons/energy.png) no-repeat;
+  background-position: 3px 50%;
+}
+.beautiful-block .text ul li:nth-child(4) {
+  padding-left: 25px;
+  list-style: none;
+  background: url(/img/icons/speedometer.png) no-repeat left;
+}
+.beautiful-block .text * {
+  text-align: left;
+}
+
+.superez-block {
+  background-color: #f2f2f2;
+  padding-top: 33px;
+}
+.superez-block .image {
+  text-align: left;
+  padding-right: 0px;
+}
+.superez-block .image img {
+  margin-left: 0px;
+}
+.superez-block .text {
+  padding-top: 0px;
+  padding-left: 0px;
+}
+.superez-block .text * {
+  text-align: left;
+}
+.superez-block .text h3 {
+  margin-bottom: 10px;
+}
+.superez-block .text h2 {
+  padding-bottom: 27px;
+  background-position: left bottom;
+}
+.superez-block .text p {
+  margin-top: 25px;
+  padding-right: 100px;
+  margin-bottom: 25px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: normal;
+  color: #999999;
+}

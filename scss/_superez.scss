@@ -1,0 +1,36 @@
+.superez-block {
+    background-color: #f2f2f2;
+    padding-top: 33px;
+    .image {
+        text-align: left;
+        padding-right: 0px;
+        img {
+            margin-left: 0px;
+        }
+    }
+    .text {
+        padding-top: 00px;
+        padding-left: 0px;
+        * {
+            text-align: left;
+        }
+        h3 {
+            margin-bottom: 10px;
+        }
+        h2 {
+            padding-bottom: 27px;
+            background-position: left bottom;
+        }
+        p {
+            margin-top: 25px;
+            padding-right: 100px;
+            margin-bottom: 25px;
+            font-size: 18px;
+            line-height: 26px;
+            font-weight: 400;
+            text-transform: none;
+            letter-spacing: normal;
+            color: #999999;
+        }
+    }
+}
