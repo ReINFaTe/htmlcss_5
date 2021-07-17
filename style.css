@@ -342,7 +342,6 @@ header .header-block .header-pic img {
 .comments-block {
   background: url(/img/prostokat.png) no-repeat;
   background-size: cover;
-  background-position: 0px 1px;
   height: 640px;
 }
 .comments-block .container {
@@ -414,4 +413,52 @@ header .header-block .header-pic img {
   margin-top: 10px;
   color: #ffffff;
   padding-bottom: 31px;
+}
+
+.ad-block {
+  background-color: #15141a;
+  height: 170px;
+}
+.ad-block .container {
+  height: 100%;
+  display: flex;
+}
+.ad-block .container p {
+  display: inline-block;
+  font-size: 36px;
+  line-height: 48px;
+  color: #ffffff;
+  margin: auto 0;
+  margin-right: auto;
+}
+.ad-block .container p span:nth-child(1) {
+  font-weight: 600;
+}
+.ad-block .container p span:nth-child(2) {
+  font-weight: 300;
+}
+.ad-block .container .buttons {
+  margin: auto 0;
+  margin-left: auto;
+}
+.ad-block .container .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  line-height: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  width: 160px;
+  height: 50px;
+  background-color: rgba(0, 142, 214, 0);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.ad-block .container .btn:hover {
+  background-color: #008ed6;
+  box-shadow: 0px 0px 3px 0px rgba(3, 3, 3, 0.1);
+}
+.ad-block .container .btn:first-child {
+  margin-right: 17px;
 }
