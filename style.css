@@ -462,6 +462,7 @@ header .header-block .header-pic img {
 
 .pricing-block {
   padding-top: 57px;
+  padding-bottom: 60px;
 }
 .pricing-block h3 {
   margin-left: 1px;
@@ -565,4 +566,63 @@ header .header-block .header-pic img {
   color: #fff;
   background-color: #008ed6;
   box-shadow: 0px 0px 3px 0px rgba(3, 3, 3, 0.1);
+}
+
+.contact-block {
+  background-color: #ededed;
+  padding-top: 57px;
+  height: 717px;
+}
+.contact-block h2 {
+  margin-top: 11px;
+  padding-bottom: 30px;
+}
+.contact-block p {
+  margin-top: 26px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #999999;
+}
+.contact-block .row {
+  column-gap: 35px;
+  margin-top: 59px;
+  text-align: center;
+}
+.contact-block .contact-form {
+  padding: 59px 85px 0 66px;
+  position: relative;
+  margin-left: 17.1%;
+  margin-top: 53px;
+  width: 770px;
+  height: 360px;
+  background-color: #15141a;
+}
+.contact-block .contact-form form {
+  display: grid;
+  grid-template-areas: "a d" "b d" "c d" "f f";
+}
+.contact-block .contact-form form textarea {
+  grid-area: d;
+}
+.contact-block .contact-form form [type=submit] {
+  grid-area: f;
+  margin-left: auto;
+}
+.contact-block .contact-form input:not([type=submit]) {
+  width: 300px;
+  height: 50px;
+  background-color: rgba(0, 142, 214, 0);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.map-block iframe {
+  width: 100%;
+  height: 370px;
+  display: block;
+}
+
+footer {
+  height: 160px;
+  background-color: #15141a;
 }
