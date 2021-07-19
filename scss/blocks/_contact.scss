@@ -20,12 +20,11 @@
     }
 
     .contact-form {
-        padding: 59px 85px 0 66px;
+        padding: 59px 85px 40px 66px;
         position: relative;
+        width: min-content;
         margin-left: 17.1%;
         margin-top: 53px;
-        width: 770px;
-        height: 360px;
         background-color: #15141a;
         form {
             // display: flex;
@@ -36,10 +35,9 @@
                 "b d"
                 "c d"
                 "f f";
-                grid-template-columns: max-content auto;
+            grid-template-columns: 300px 319px;
             textarea {
                 grid-area: d;
-                width: auto;
                 margin-left: 19px;
                 background-color: rgba(0,142,214,0.0);
                 border: 1px solid rgba(255,255,255,0.2);
@@ -78,7 +76,6 @@
             }
         }
         input:not([type="submit"]) {
-            width: 300px;
             height: 50px;
             background-color: rgba(0,142,214,0.0);
             border: 1px solid rgba(255,255,255,0.2);

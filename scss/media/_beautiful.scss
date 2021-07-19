@@ -1,0 +1,22 @@
+.beautiful-block {
+    @media (max-width: 1200px) {
+        .image {
+            display: flex;
+            img {
+                margin: auto auto;
+                display: block;
+                margin: auto;
+                width: 400px;
+            }
+        } 
+    }
+    @media (max-width: 992px) {
+        .image {
+            img {
+                width: 300px;
+                display: block;
+                margin: auto auto;
+            }
+        } 
+    }
+}

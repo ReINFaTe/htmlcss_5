@@ -1,0 +1,50 @@
+.ad-block {
+    @media (max-width: 1200px) {
+        .container {
+            p {
+                flex-basis: 50%;
+                span{
+                    &:nth-child(2){
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 992px){
+        .container {
+            p {
+                flex-basis: 70%;
+                span{
+                    &:nth-child(2){
+                        display: inline-block;
+                    }
+                }
+            }
+            text-align: center;
+            .btn {
+                &:first-child{
+                    margin-right: 0px;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+    @media (max-width: 768px){
+        .container {
+            flex-wrap: wrap;
+            padding: 20px 15px;
+            p {
+                flex-basis: 100%;
+            }
+            .buttons {
+                margin: 0 auto;
+            }
+            .btn {
+                &:first-child {
+                    margin-bottom: 0px;
+                }
+            }
+        }
+    }
+}

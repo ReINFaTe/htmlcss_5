@@ -1,0 +1,12 @@
+.product-overview-block {
+    @media (max-width:1200px) {
+        .features {
+            row-gap: 30px;
+            .features-item {
+                &:nth-child(n){
+                    padding: 0 25px;
+                }
+            }
+        }
+    }
+}
