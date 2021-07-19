@@ -36,12 +36,45 @@
                 "b d"
                 "c d"
                 "f f";
+                grid-template-columns: max-content auto;
             textarea {
                 grid-area: d;
+                width: auto;
+                margin-left: 19px;
+                background-color: rgba(0,142,214,0.0);
+                border: 1px solid rgba(255,255,255,0.2);
+                border-radius: 3px;
+                resize: none;
+                position: relative;
+                &::placeholder {
+                    position: relative;
+                    top: 12px;
+                    padding-left: 17px;
+                    opacity: 0.2;
+                    font-family: 'Source Sans Pro';
+                    font-size: 14px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    color: #ffffff;
+                }
             }
             [type="submit"] {
+                width: 160px;
+                height: 50px;
                 grid-area: f;
                 margin-left: auto;
+                margin-top: 21px;
+                text-transform: uppercase;
+                font-size: 14px;
+                font-weight: 700;
+                text-transform: uppercase;
+                color: #ffffff;
+                border: 1px solid rgba(255,255,255,0.2);
+                &:hover {
+                    background-color: #008ed6;
+                    border-color: transparent;
+                }
+
             }
         }
         input:not([type="submit"]) {
@@ -49,6 +82,22 @@
             height: 50px;
             background-color: rgba(0,142,214,0.0);
             border: 1px solid rgba(255,255,255,0.2);
+            border-radius: 3px;
+            position: relative;
+            &:not(.no-margin){
+                margin-bottom: 20px;
+            }
+            &::placeholder {
+                position: relative;
+                top: -1px;
+                padding-left: 14px;
+                opacity: 0.2;
+                font-family: 'Source Sans Pro';
+                font-size: 14px;
+                font-weight: 700;
+                text-transform: uppercase;
+                color: #ffffff;
+            }
         }
     }
 }
