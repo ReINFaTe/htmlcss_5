@@ -3,7 +3,7 @@ var gulp    = require('gulp'),
  
 var paths = {
   styles: {
-    src: 'scss/*.scss',
+    src: 'scss/**/*.scss',
     dest: '.'
   }
 };

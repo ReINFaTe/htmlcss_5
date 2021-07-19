@@ -7,13 +7,18 @@
 
 @import "fonts";
 @import "global";
-@import "header";
-@import "product-overview";
-@import "beautiful";
-@import "superez";
-@import "comments";
-@import "ad";
-@import "pricing";
-@import "contact";
-@import "map";
-@import "footer";
+
+// Main blocks files
+@import "blocks/header";
+@import "blocks/product-overview";
+@import "blocks/beautiful";
+@import "blocks/superez";
+@import "blocks/comments";
+@import "blocks/ad";
+@import "blocks/pricing";
+@import "blocks/contact";
+@import "blocks/map";
+@import "blocks/footer";
+
+//Media blocks files;
+@import "media/pricing";
