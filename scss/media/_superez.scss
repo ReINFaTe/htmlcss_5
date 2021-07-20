@@ -29,4 +29,11 @@
             margin-top: 40px;
         }    
     }
+    @media (max-width: 576px) {
+        .image {
+            img {
+                width: 300px;
+            }
+        }
+    }
 }

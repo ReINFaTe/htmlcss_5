@@ -56,4 +56,12 @@ header {
             }
         }
     }
+    @media (max-width: 576px) {
+        .header-block {
+            .introduce {
+                background-position: bottom center;
+                background-size: 70%;
+            }
+        }
+    }
 }

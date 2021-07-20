@@ -47,4 +47,13 @@
             }
         }
     }
+    @media (max-width: 353px) {
+        .container {
+            .btn {
+                &:first-child {
+                    margin-bottom: 15px;
+                }
+            }
+        } 
+    }
 }

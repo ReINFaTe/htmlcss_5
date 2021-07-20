@@ -19,4 +19,11 @@
             }
         } 
     }
+    @media (max-width: 576px) {
+        .image {
+            img {
+                width: 200px;
+            }
+        }
+    }
 }
