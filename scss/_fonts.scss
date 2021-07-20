@@ -1,2 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+$font-path: "fonts/";
+@mixin font-face($family, $filename, $format, $font-path, $weight: normal, $style: normal) {
+  @font-face {
+    font-family: $family;
+    src: url("#{$font-path}#{$filename}") format("#{$format}");
+    font-style: $style;
+    font-weight: $weight;
+  }
+}
+@include font-face("Source Sans Pro", "SourceSansPro-Light.ttf","truetype", $font-path, 300, normal);
+@include font-face("Source Sans Pro", "SourceSansPro-Italic.ttf","truetype", $font-path, 400, italic);
+@include font-face("Source Sans Pro", "SourceSansPro-Regular.ttf","truetype", $font-path, 400, normal);
+@include font-face("Source Sans Pro", "SourceSansPro-SemiBold.ttf","truetype", $font-path, 600, normal);
+@include font-face("Source Sans Pro", "SourceSansPro-Bold.ttf","truetype", $font-path, 700, normal);
+
+@include font-face("Quicksand", "Quicksand.ttf","truetype", $font-path, 700, normal);
+
+@include font-face("FontAwesome", "fa-brands-400.ttf","truetype", $font-path, 400, normal);
+@include font-face("FontAwesome", "fa-brands-400.eot","embedded-opentype", $font-path, 400, normal);
+@include font-face("FontAwesome", "fa-brands-400.svg","svg", $font-path, 400, normal);
+@include font-face("FontAwesome", "fa-brands-400.woff","woff", $font-path, 400, normal);
+@include font-face("FontAwesome", "fa-brands-400.woff2","woff2", $font-path, 400, normal);

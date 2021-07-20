@@ -1,68 +1,66 @@
 .product-overview-block {
+    padding-top: 62px;
     padding-bottom: 70px;
     border-bottom: 2px solid #ededed;
-    padding-top: 62px;
-    h2 {
-        margin-top: 10px;
-        padding-bottom: 37px;
-    }
-    h2, h3 {
-        text-align: center;
-    }
-    .features {
-        margin-top: 73px;
-        .features-item {
-            padding-right: 30px;
-            padding-left: 30px;
-            text-align: center;
-            &:nth-child(1){
-                padding-left: 19px;
-                padding-right: 42px;
-            }
-            &:nth-child(2) {
-                padding-left: 26px;
-                padding-right: 34px;
-            }
-            &:nth-child(3) {
-                padding-left: 33px;
-                padding-right: 27px;
-            }
-            &:nth-child(4) {
-                padding-left: 40px;
-                padding-right: 19px;
-            }
-            .features-img {
-                position: relative;
-                margin: 0 auto;
-                width: 90px;
-                height: 90px;
-                border-radius: 50%;
-                background-color: #ffffff;
-                border: 1px solid #e0e0e0;
-                img {
-                    position: absolute;
-                    top: 0;
-                    bottom: 0;
-                    left: 0;
-                    right: 0;
-                    margin:auto;
+    .container {
+        h2 {
+            margin-top: 10px;
+            padding-bottom: 37px;
+        }
+        .features {
+            margin-top: 73px;
+            .item {
+                padding-left: 30px;
+                padding-right: 30px;
+                text-align: center;
+                &:nth-child(1){
+                    padding-left: 19px;
+                    padding-right: 42px;
                 }
-            }
-            p {
-                margin-top: 34px;
-                margin-bottom: 14px;
-
-                font-size: 24px;
-                line-height: 20px;
-                font-weight: 400;
-                color: #1a1a1a;
-        
-            }
-            span {
-                font-size: 18px;
-                line-height: 26px;
-                color: #999999;
-                display: block;
+                &:nth-child(2) {
+                    padding-left: 26px;
+                    padding-right: 34px;
+                }
+                &:nth-child(3) {
+                    padding-left: 33px;
+                    padding-right: 27px;
+                }
+                &:nth-child(4) {
+                    padding-left: 40px;
+                    padding-right: 19px;
+                }
+                .image-wrapper {
+                    position: relative;
+                    margin: 0 auto;
+                    width: 90px;
+                    height: 90px;
+                    border-radius: 50%;
+                    background-color: #ffffff;
+                    border: 1px solid #e0e0e0;
+                    img {
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        margin:auto;
+                    }
+                }
+                p {
+                    margin-top: 34px;
+                    margin-bottom: 14px;
+                    font-size: 24px;
+                    line-height: 20px;
+                    font-weight: 400;
+                    color: #1a1a1a;
+            
+                }
+                span {
+                    font-size: 18px;
+                    line-height: 26px;
+                    color: #999999;
+                    display: block;
+                }
             }
         }
     }

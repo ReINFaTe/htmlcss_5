@@ -5,14 +5,19 @@
 // @import "../node_modules/@fortawesome/fontawesome-free/scss/regular.scss";
 // @import "../node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
 
+
+@import "vendor/bootstrap";
+@import "vendor/owl.carousel";
+
 @import "fonts";
 @import "global";
 
 // Main(desktop) blocks files
 @import "blocks/header";
 @import "blocks/product-overview";
+@import "blocks/about-blocks";
 @import "blocks/beautiful";
-@import "blocks/superez";
+@import "blocks/customize";
 @import "blocks/comments";
 @import "blocks/ad";
 @import "blocks/pricing";
@@ -26,7 +31,7 @@
 
 @import "media/pricing";
 @import "media/beautiful";
-@import "media/superez";
+@import "media/customize";
 @import "media/ad";
 @import "media/contact";
 @import "media/footer";

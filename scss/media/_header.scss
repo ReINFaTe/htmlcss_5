@@ -1,70 +1,84 @@
 header {
     @media (max-width: 1200px) {
-        .header-block {
-            .introduce {
-                .btn {
-                    margin-top: 20px;
+        .container {
+            .header-content {
+                .welcome-section {
+                    .btn {
+                        margin-top: 20px;
+                    }
                 }
-            }
-            .header-pic {
-                img {
-                    text-align: left;
-                    width: 400px;
+                .image-wrapper {
+                    img {
+                        text-align: left;
+                        width: 400px;
+                    }
                 }
             }
         }
     }
     @media (max-width:992px) {
-        .header-block {
-            .header-pic {
-                img {
-                    display: none;
+        .container {
+            .header-content {
+                .image-wrapper {
+                    img {
+                        display: none;
+                    }
                 }
-            }
-            .introduce {
-                background-image: url(/img/devices.png);
-                background-repeat: no-repeat;
-                background-position: right top;
-                .btn {
-                    margin-bottom: 20px;
+                .welcome-section {
+                    background: url(img/devices.png) no-repeat right top;
+                    .btn {
+                        margin-bottom: 20px;
+                    }
                 }
             }
         }
     }
     @media (max-width: 768px) {
-        .menu-icon {
-            display: block;
-            background-color: transparent;
-            border: none;
-        }
-        .nav-menu {
-            z-index: 1;
-            background-color: rgba(#000000, 0.9);
-            text-align: center;
-            position: fixed;
-            height: 100%;
-            width: 40%;
-            top: 0;
-            left: 100%;
-            ul {
-                position: relative;
-                top: 25%;
-                transform: translate(-50% -50%);
-                li {
-                    display: block;
+        .container {
+            .header-top {
+                .navigation {
+                    .menu-button {
+                        display: block;
+                        background-color: transparent;
+                        border: none;
+                    }
+                    .nav-menu {
+                        z-index: 1;
+                        background-color: rgba(#000000, 0.9);
+                        text-align: center;
+                        position: fixed;
+                        height: 100%;
+                        width: 40%;
+                        top: 0;
+                        left: 100%;
+                        ul {
+                            position: relative;
+                            top: 25%;
+                            transform: translate(-50% -50%);
+                            li {
+                                display: block;
+                            }
+                        }
+                    }
                 }
             }
         }
     }
     @media (max-width: 576px) {
-        .header-block {
-            .introduce {
-                background-position: bottom center;
-                background-size: 70%;
+        .container {
+            .header-top {
+                .navigation {
+                    .nav-menu {
+                        width: 100%;
+                    }
+                }
             }
-        }
-        .nav-menu {
-            width: 100%;
+            .header-content {
+                .welcome-section {
+                    background-position: bottom center;
+                    background-size: 70%;
+                }
+            }
         }
     }
 }

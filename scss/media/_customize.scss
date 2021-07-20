@@ -1,0 +1,49 @@
+.about-block {
+    .customize {
+        @media (max-width: 1200px) {
+            .container {
+                .image {
+                    display: flex;
+                    img {
+                        margin: auto auto;
+                        width: 500px;
+                        transform: rotate(-40deg) translate(-70px, -40px);
+                        transition: all 2s;
+                    }
+                }
+            }     
+        }
+        @media (max-width: 998px) {
+            .container {
+                .image {
+                    img {
+                        width: 400px;
+                    }
+                } 
+            }    
+        }
+        @media (max-width: 768px) {
+            .container {
+                .image {
+                    order: -1;
+                    img {
+                        width: 400px;
+                        transform: none;
+                    }
+                } 
+                .text {
+                    margin-top: 40px;
+                }
+            }    
+        }
+        @media (max-width: 576px) {
+            .container {
+                .image {
+                    img {
+                        width: 300px;
+                    }
+                }
+            }
+        }
+    }
+}
