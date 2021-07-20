@@ -82,24 +82,6 @@ header::before {
   background-color: #15141a;
   background-image: linear-gradient(135deg, rgba(21, 20, 26, 0.4) 19%, rgba(21, 20, 26, 0) 80%);
 }
-header #menu-toggle {
-  display: none;
-}
-header #menu-toggle:checked ~ .menu-icon .bars {
-  background-color: transparent;
-}
-header #menu-toggle:checked ~ .menu-icon .bars::before {
-  transform: rotate(-45deg);
-  top: 0;
-}
-header #menu-toggle:checked ~ .menu-icon .bars::after {
-  transform: rotate(45deg);
-  top: 0;
-}
-header #menu-toggle:checked ~ .nav-menu {
-  display: block;
-  transform: translate(-100%, 0%);
-}
 header .menu-icon {
   z-index: 3;
   display: none;
@@ -443,10 +425,10 @@ header .header-block .header-pic img {
 .comments-block {
   background: url(/img/prostokat.png) no-repeat;
   background-size: cover;
-  height: 640px;
 }
 .comments-block .container {
   padding-top: 63px;
+  padding-bottom: 49px;
 }
 .comments-block .container .owl-stage-outer {
   margin-top: 87px;
@@ -683,7 +665,7 @@ header .header-block .header-pic img {
 .contact-block {
   background-color: #ededed;
   padding-top: 57px;
-  height: 717px;
+  max-height: 717px;
 }
 .contact-block h2 {
   margin-top: 11px;
@@ -697,24 +679,33 @@ header .header-block .header-pic img {
   color: #999999;
 }
 .contact-block .row {
-  column-gap: 35px;
   margin-top: 59px;
   text-align: center;
+  row-gap: 20px;
 }
-.contact-block .contact-form {
+.contact-block .row .contact-link-item:first-child {
+  padding-right: 20px;
+}
+.contact-block .row .contact-link-item:last-child {
+  padding-top: 2px;
+  padding-left: 18px;
+}
+.contact-block .container-form {
+  margin-top: 53px;
+}
+.contact-block .container-form .contact-form {
   padding: 59px 85px 40px 66px;
   position: relative;
   width: min-content;
-  margin-left: 17.1%;
-  margin-top: 53px;
+  margin: 0 auto;
   background-color: #15141a;
 }
-.contact-block .contact-form form {
+.contact-block .container-form .contact-form form {
   display: grid;
   grid-template-areas: "a d" "b d" "c d" "f f";
   grid-template-columns: 300px 319px;
 }
-.contact-block .contact-form form textarea {
+.contact-block .container-form .contact-form form textarea {
   grid-area: d;
   margin-left: 19px;
   background-color: rgba(0, 142, 214, 0);
@@ -723,7 +714,7 @@ header .header-block .header-pic img {
   resize: none;
   position: relative;
 }
-.contact-block .contact-form form textarea::placeholder {
+.contact-block .container-form .contact-form form textarea::placeholder {
   position: relative;
   top: 12px;
   padding-left: 17px;
@@ -734,7 +725,7 @@ header .header-block .header-pic img {
   text-transform: uppercase;
   color: #ffffff;
 }
-.contact-block .contact-form form [type=submit] {
+.contact-block .container-form .contact-form form [type=submit] {
   width: 160px;
   height: 50px;
   grid-area: f;
@@ -747,21 +738,21 @@ header .header-block .header-pic img {
   color: #ffffff;
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
-.contact-block .contact-form form [type=submit]:hover {
+.contact-block .container-form .contact-form form [type=submit]:hover {
   background-color: #008ed6;
   border-color: transparent;
 }
-.contact-block .contact-form input:not([type=submit]) {
+.contact-block .container-form .contact-form input:not([type=submit]) {
   height: 50px;
   background-color: rgba(0, 142, 214, 0);
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 3px;
   position: relative;
 }
-.contact-block .contact-form input:not([type=submit]):not(.no-margin) {
+.contact-block .container-form .contact-form input:not([type=submit]):not(.no-margin) {
   margin-bottom: 20px;
 }
-.contact-block .contact-form input:not([type=submit])::placeholder {
+.contact-block .container-form .contact-form input:not([type=submit])::placeholder {
   position: relative;
   top: -1px;
   padding-left: 14px;
@@ -884,6 +875,9 @@ footer .container p {
   header .header-block .introduce {
     background-position: bottom center;
     background-size: 70%;
+  }
+  header .nav-menu {
+    width: 100%;
   }
 }
 
@@ -1048,23 +1042,61 @@ footer .container p {
 }
 
 @media (max-width: 1200px) {
-  .contact-block .contact-form {
+  .contact-block .container-form .contact-form {
     margin: 50px auto 0 auto;
   }
 }
 @media (max-width: 992px) {
-  .contact-block .contact-form {
-    position: static;
+  .contact-block .row {
+    justify-content: center;
+    margin-top: 59px;
+    text-align: center;
+  }
+  .contact-block .row .contact-link-item:first-child {
+    padding-right: 0px;
+  }
+  .contact-block .row .contact-link-item:last-child {
+    padding-top: 0px;
+    padding-left: 0px;
+  }
+  .contact-block .container-form .contact-form {
     width: 100%;
     margin: 0;
   }
-  .contact-block .contact-form form {
+  .contact-block .container-form .contact-form form {
     grid-template-columns: auto auto;
   }
 }
 @media (max-width: 768px) {
-  .contact-block .contact-form {
-    padding: 15px;
+  .contact-block {
+    max-height: none;
+  }
+  .contact-block .container-form {
+    max-width: none;
+    padding: 0;
+  }
+}
+@media (max-width: 576px) {
+  .contact-block .container-form .contact-form {
+    padding: 30px 20px;
+  }
+  .contact-block .container-form .contact-form form {
+    display: block;
+  }
+  .contact-block .container-form .contact-form form [type=submit] {
+    display: block;
+    width: 160px;
+    height: 50px;
+    margin-left: 0;
+    margin-top: 21px;
+  }
+  .contact-block .container-form .contact-form form textarea {
+    margin-left: 0;
+    height: 150px;
+  }
+  .contact-block .container-form .contact-form form input:not([type=submit]), .contact-block .container-form .contact-form form textarea {
+    margin-bottom: 20px;
+    width: 100%;
   }
 }
 
