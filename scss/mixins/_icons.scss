@@ -1,0 +1,10 @@
+@use "sass:meta";
+@mixin class-icons ($args...) {
+    @each $name, $unicode in meta.keywords($args) {
+        .icon-#{$name} {
+            &::before {
+                content: "#{$unicode}";
+            }
+        }
+      }
+}

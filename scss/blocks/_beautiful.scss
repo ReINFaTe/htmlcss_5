@@ -1,3 +1,5 @@
+@use "../mixins/child-selectors";
+
 .about-block {
     .beautiful {
         padding-top: 65px;
@@ -34,21 +36,16 @@
 
                     li {
                         padding-left: 25.5px;
-                        &:nth-child(1) {
-                            background: url(img/icons/cup.png) no-repeat left;
-                        }
-                        &:nth-child(2) {
-                            background: url(img/icons/mouse.png) no-repeat;
-                            background-position: 3px 50%;
-                        }
-                        &:nth-child(3) {
-                            background: url(img/icons/energy.png) no-repeat;
-                            background-position: 3px 50%;
-        
-                        }
-                        &:nth-child(4) {
-                            background: url(img/icons/speedometer.png) no-repeat left;
-                        }
+                        @include child-selectors.many-values(1, background,
+                            url(img/icons/cup.png) no-repeat left,
+                            url(img/icons/mouse.png) no-repeat,
+                            url(img/icons/energy.png) no-repeat,
+                            url(img/icons/speedometer.png) no-repeat left
+                        );
+                        @include child-selectors.many-values(2, background-position,
+                            3px 50%,
+                            3px 50%,
+                        );
                         font-size: 18px;
                         line-height: 36px;
                         font-weight: 400;

@@ -1,0 +1,29 @@
+@use "../mixins/child-selectors";
+.pricing-block {
+    .container {
+        .pricing-table {
+            @media (max-width: 1200px) {
+               margin-left: 0px;
+               [class^=col] {
+                   padding: 0 20px;
+                    @include child-selectors.many-values(1, justify-content, 
+                    flex-end, 
+                    flex-start, 
+                    flex-end, 
+                    flex-start);
+                    @include child-selectors.one(1, 4, padding-left, 0px);
+                }
+            }
+            @media (max-width : 768px) {
+                margin-left: 0px;
+                [class^=col] {
+                    padding: 0px;
+                    @include child-selectors.one-content(1, 4) {
+                        justify-content: center;
+                        padding-left: 0px;
+                    }
+                 }
+            }
+        }
+    }
+}

@@ -1,3 +1,4 @@
+@use "mixins/child-selectors";
 .product-overview-block {
     padding-top: 62px;
     padding-bottom: 70px;
@@ -15,22 +16,16 @@
                 padding-right: 30px;
                 text-align: center;
                 letter-spacing: 0.02px;
-                &:nth-child(1){
-                    padding-left: 19px;
-                    padding-right: 42px;
-                }
-                &:nth-child(2) {
-                    padding-left: 26px;
-                    padding-right: 34px;
-                }
-                &:nth-child(3) {
-                    padding-left: 34px;
-                    padding-right: 27px;
-                }
-                &:nth-child(4) {
-                    padding-left: 41px;
-                    padding-right: 19px;
-                }
+                @include child-selectors.many-values(1, padding-left,
+                19px,
+                26px,
+                34px,
+                41px);
+                @include child-selectors.many-values(1, padding-right,
+                42px,
+                34px,
+                27px,
+                19px);
                 .image-wrapper {
                     position: relative;
                     margin: 0 auto;

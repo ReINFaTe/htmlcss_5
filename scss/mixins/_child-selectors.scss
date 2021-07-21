@@ -1,0 +1,39 @@
+@mixin many-values($start, $property, $values...) {
+    @for $i from $start to length($values) + $start {
+        &:nth-child(#{$i}) {
+            #{$property}: #{nth($values, $i + 1 - $start)};
+        }
+
+    }
+};
+
+@mixin many-propertys($start, $propertys...) {
+    @for $i from $start to length($propertys) + $start {
+        &:nth-child(#{$i}) {
+            #{nth($propertys, $i + 1 - $start)}: s;
+        } 
+    }
+};
+
+@mixin one($start, $end, $property, $value) {
+    @for $i from $start to $end + $start{
+        &:nth-child(#{$i}) {
+            #{$property}: $value;
+        } 
+    }
+};
+@mixin one_content($start, $end) {
+    @for $i from $start to $end + $start{
+        &:nth-child(#{$i}) {
+            @content;
+        } 
+    }
+};
+
+@mixin many-values-content($start, $property, $values...) {
+    @for $i from $start to length($values) + $start {
+        &:nth-child(#{$i}) {
+            @content($i, $start, $property, $values)
+        }
+    }
+};

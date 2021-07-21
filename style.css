@@ -2290,18 +2290,26 @@ header .container .header-content .image-wrapper img {
 }
 .product-overview-block .container .features .item:nth-child(1) {
   padding-left: 19px;
-  padding-right: 42px;
 }
 .product-overview-block .container .features .item:nth-child(2) {
   padding-left: 26px;
-  padding-right: 34px;
 }
 .product-overview-block .container .features .item:nth-child(3) {
   padding-left: 34px;
-  padding-right: 27px;
 }
 .product-overview-block .container .features .item:nth-child(4) {
   padding-left: 41px;
+}
+.product-overview-block .container .features .item:nth-child(1) {
+  padding-right: 42px;
+}
+.product-overview-block .container .features .item:nth-child(2) {
+  padding-right: 34px;
+}
+.product-overview-block .container .features .item:nth-child(3) {
+  padding-right: 27px;
+}
+.product-overview-block .container .features .item:nth-child(4) {
   padding-right: 19px;
 }
 .product-overview-block .container .features .item .image-wrapper {
@@ -2394,14 +2402,18 @@ header .container .header-content .image-wrapper img {
 }
 .about-block .beautiful .container .text ul li:nth-child(2) {
   background: url(img/icons/mouse.png) no-repeat;
-  background-position: 3px 50%;
 }
 .about-block .beautiful .container .text ul li:nth-child(3) {
   background: url(img/icons/energy.png) no-repeat;
-  background-position: 3px 50%;
 }
 .about-block .beautiful .container .text ul li:nth-child(4) {
   background: url(img/icons/speedometer.png) no-repeat left;
+}
+.about-block .beautiful .container .text ul li:nth-child(2) {
+  background-position: 3px 50%;
+}
+.about-block .beautiful .container .text ul li:nth-child(3) {
+  background-position: 3px 50%;
 }
 
 .about-block .customize {
@@ -2577,17 +2589,17 @@ header .container .header-content .image-wrapper img {
 .pricing-block .container .pricing-table [class^=col]:nth-child(2) {
   padding-left: 6px;
 }
-.pricing-block .container .pricing-table [class^=col]:nth-child(2) .pricing-item .pricing-description-wrapper {
-  padding-left: 6px;
-}
 .pricing-block .container .pricing-table [class^=col]:nth-child(3) {
   padding-left: 13px;
 }
-.pricing-block .container .pricing-table [class^=col]:nth-child(3) .pricing-item .pricing-description-wrapper {
-  padding-left: 5px;
-}
 .pricing-block .container .pricing-table [class^=col]:nth-child(4) {
   padding-left: 21px;
+}
+.pricing-block .container .pricing-table [class^=col]:nth-child(2) .pricing-item .pricing-description-wrapper {
+  padding-left: 6px;
+}
+.pricing-block .container .pricing-table [class^=col]:nth-child(3) .pricing-item .pricing-description-wrapper {
+  padding-left: 5px;
 }
 .pricing-block .container .pricing-table [class^=col]:nth-child(4) .pricing-item .pricing-description-wrapper {
   padding-left: 3px;
@@ -2821,20 +2833,19 @@ footer .container .social-links-row .social-link:nth-child(2) {
 footer .container .social-links-row .social-link:nth-child(3) {
   margin-right: 32px;
 }
+footer .container .social-links-row .social-link:nth-child(4) {
+  margin-right: 33px;
+}
+footer .container .social-links-row .social-link:nth-child(5) {
+  margin-right: 0px;
+}
 footer .container .social-links-row .social-link:nth-child(3) i::before {
   position: relative;
   top: -1px;
 }
-footer .container .social-links-row .social-link:nth-child(4) {
-  margin-right: 33px;
-}
 footer .container .social-links-row .social-link:nth-child(4) i::before {
   position: relative;
   top: -2px;
-}
-footer .container .social-links-row .social-link:nth-child(5) {
-  margin-right: 0;
-  font-size: 20px;
 }
 footer .container .social-links-row [class^=icon] {
   font-family: FontAwesome;
@@ -2932,18 +2943,26 @@ footer .container p {
   }
   .pricing-block .container .pricing-table [class^=col]:nth-child(1) {
     justify-content: flex-end;
-    padding-left: 0px;
   }
   .pricing-block .container .pricing-table [class^=col]:nth-child(2) {
     justify-content: flex-start;
-    padding-left: 0px;
   }
   .pricing-block .container .pricing-table [class^=col]:nth-child(3) {
     justify-content: flex-end;
-    padding-left: 0px;
   }
   .pricing-block .container .pricing-table [class^=col]:nth-child(4) {
     justify-content: flex-start;
+  }
+  .pricing-block .container .pricing-table [class^=col]:nth-child(1) {
+    padding-left: 0px;
+  }
+  .pricing-block .container .pricing-table [class^=col]:nth-child(2) {
+    padding-left: 0px;
+  }
+  .pricing-block .container .pricing-table [class^=col]:nth-child(3) {
+    padding-left: 0px;
+  }
+  .pricing-block .container .pricing-table [class^=col]:nth-child(4) {
     padding-left: 0px;
   }
 }
