@@ -1,39 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Lucid</title>
     <meta charset="UTF-8">
     <meta name="description" content="Onepage theme">
     <meta name="keywords" content="Lucid, html, css, pixel perfect(no)">
     <meta name="author" content="Misha Lavrenchuk">
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
+    <header id="home">
         <div class="container">
-            <div class="header-top row">
-                <div class="logo col-3">
-                    <span class="name">Lu<span class="c">c</span><span class="i">i</span>d</span>
-                    <span class="description">Onepage theme</span>
+            <div class="header-top ">
+                <div class="container row">
+                    <div class="logo col-md-3 col-6">
+                        <span class="name">Lu<span class="c">c</span><span class="i">i</span>d</span>
+                        <span class="description">Onepage theme</span>
+                    </div>
+                    <div class="navigation col-md-9 col-6">
+                        <button class="menu-button">
+                            <span class="hamburger"></span>
+                            <div class="close-me-plz" tabindex="1"></div>
+                        </button>
+                        <nav class="nav-menu">
+                            <ul>
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#features">Features</a></li>
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#testimonials">Testimonials</a></li>
+                                <li><a href="#pricing">Pricing</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
-                <div class="navigation col-9">
-                    <button class="menu-button">
-                        <span class="hamburger"></span>
-                        <div class="close-me-plz" tabindex="1"></div>
-                    </button>
-                    <nav class="nav-menu">
-                        <ul>
-                            <li>Home</li>
-                            <li>Features</li>
-                            <li>About</li>
-                            <li>Testimonials</li>
-                            <li>Pricing</li>
-                            <li>Contact</li>
-                        </ul>
-                    </nav>
-                </div>
+
             </div>
             <div class="header-content row">
                 <section class="welcome-section col-xl-6 col-lg-7 col-md-12">
@@ -53,7 +57,7 @@
         </div>
     </header>
     <div class="content">
-        <section class="product-overview-block">
+        <section class="product-overview-block" id="features">
             <div class="container">
                 <h3>Product overview</h3>
                 <h2>List of amazing features</h2>
@@ -64,7 +68,8 @@
                         </div>
                         <p>Responsive</p>
                         <span>
-                            Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum lacinia consectetur.
+                            Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum lacinia
+                            consectetur.
                         </span>
                     </div>
                     <div class="item col-xl-3 col-md-6">
@@ -73,16 +78,18 @@
                         </div>
                         <p>Customizable</p>
                         <span>
-                            Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum lacinia consectetur.
+                            Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum lacinia
+                            consectetur.
                         </span>
                     </div>
                     <div class="item col-xl-3 col-md-6">
                         <div class="image-wrapper">
-                            <img src=img/icons/like.png alt="like icon"> 
+                            <img src=img/icons/like.png alt="like icon">
                         </div>
                         <p>Lovely design</p>
                         <span>
-                            Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum lacinia consectetur.
+                            Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum lacinia
+                            consectetur.
                         </span>
                     </div>
                     <div class="item col-xl-3 col-md-6">
@@ -91,13 +98,14 @@
                         </div>
                         <p>Mobile Friendly</p>
                         <span>
-                            Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum lacinia consectetur.
+                            Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum lacinia
+                            consectetur.
                         </span>
                     </div>
                 </div>
             </div>
         </section>
-        <div class="about-block">
+        <div class="about-block" id="about">
             <section class="beautiful">
                 <div class="container">
                     <div class="row">
@@ -108,9 +116,11 @@
                             <h3>Dip into the details</h3>
                             <h2>Beautiful on every device</h2>
                             <p>
-                                Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec
+                                Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum
+                                velit. Nam nec
                                 tellus a odio
-                                tincidunt auctor a ornare odio. Sed non &nbsp;mauris vitae erat consequat auctor eu in elit.
+                                tincidunt auctor a ornare odio. Sed non &nbsp;mauris vitae erat consequat auctor eu in
+                                elit.
                             </p>
                             <ul>
                                 <li>Awesome design</li>
@@ -124,14 +134,17 @@
             </section>
             <section class="customize">
                 <div class="container">
-                    <div class="row"> 
+                    <div class="row">
                         <div class="text col-xl-5 col-lg-7 col-md-7 col-sm-12">
                             <h3>Dip into the details</h3>
                             <h2>Super easy to customize</h2>
                             <p>
-                                Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec
-                                tellus a odio tincidunt auctor a ornare odio. Sed non &nbsp;mauris vitae erat consequat auctor eu in elit.
-                                Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                                Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum
+                                velit. Nam nec
+                                tellus a odio tincidunt auctor a ornare odio. Sed non &nbsp;mauris vitae erat consequat
+                                auctor eu in elit.
+                                Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+                                himenaeos.
                             </p>
                         </div>
                         <div class="image col-xl-7 col-lg-5 col-md-5 col-sm-12">
@@ -141,14 +154,15 @@
                 </div>
             </section>
         </div>
-        <section class="comments-block">
+        <section class="comments-block" id="testimonials">
             <div class="container">
                 <h3>Quality has its price</h3>
                 <h2>Pricings & Plans</h2>
                 <div class="comments-slider owl-carousel owl-theme">
                     <div>
                         <p class="text">
-                            Once upon a time all the Rivers combined to protest against the action of the Sea in making their waters salt.
+                            Once upon a time all the Rivers combined to protest against the action of the Sea in making
+                            their waters salt.
                             “When we come to you,” said they to the Sea.
                         </p>
                         <div class="user">
@@ -163,7 +177,8 @@
                     </div>
                     <div>
                         <p class="text">
-                            A shoe is not only a design, but it's a part of your body language, the way you walk. The way you're going to move
+                            A shoe is not only a design, but it's a part of your body language, the way you walk. The
+                            way you're going to move
                             is quite dictated by your shoes.
                         </p>
                         <div class="user">
@@ -178,7 +193,8 @@
                     </div>
                     <div>
                         <p class="text">
-                            Once upon a time all the Rivers combined to protest against the action of the Sea in making their waters salt.
+                            Once upon a time all the Rivers combined to protest against the action of the Sea in making
+                            their waters salt.
                             “When we come to you,” said they to the Sea.
                         </p>
                         <div class="user">
@@ -193,7 +209,8 @@
                     </div>
                     <div>
                         <p class="text">
-                            A shoe is not only a design, but it's a part of your body language, the way you walk. The way you're going to move
+                            A shoe is not only a design, but it's a part of your body language, the way you walk. The
+                            way you're going to move
                             is quite dictated by your shoes.
                         </p>
                         <div class="user">
@@ -208,7 +225,8 @@
                     </div>
                     <div>
                         <p class="text">
-                            Once upon a time all the Rivers combined to protest against the action of the Sea in making their waters salt.
+                            Once upon a time all the Rivers combined to protest against the action of the Sea in making
+                            their waters salt.
                             “When we come to you,” said they to the Sea.
                         </p>
                         <div class="user">
@@ -223,7 +241,8 @@
                     </div>
                     <div>
                         <p class="text">
-                            A shoe is not only a design, but it's a part of your body language, the way you walk. The way you're going to move
+                            A shoe is not only a design, but it's a part of your body language, the way you walk. The
+                            way you're going to move
                             is quite dictated by your shoes.
                         </p>
                         <div class="user">
@@ -238,7 +257,8 @@
                     </div>
                     <div>
                         <p class="text">
-                            Once upon a time all the Rivers combined to protest against the action of the Sea in making their waters salt.
+                            Once upon a time all the Rivers combined to protest against the action of the Sea in making
+                            their waters salt.
                             “When we come to you,” said they to the Sea.
                         </p>
                         <div class="user">
@@ -253,7 +273,8 @@
                     </div>
                     <div>
                         <p class="text">
-                            A shoe is not only a design, but it's a part of your body language, the way you walk. The way you're going to move
+                            A shoe is not only a design, but it's a part of your body language, the way you walk. The
+                            way you're going to move
                             is quite dictated by your shoes.
                         </p>
                         <div class="user">
@@ -278,7 +299,7 @@
                 </div>
             </div>
         </section>
-        <section class="pricing-block">
+        <section class="pricing-block" id="pricing">
             <div class="container">
                 <h3>Quality has its price</h3>
                 <h2>Pricings & Plans</h2>
@@ -286,13 +307,15 @@
                     <div class="col-xl-3 col-md-6">
                         <div class="pricing-item">
                             <div class="pricing-name-wrapper">
-                               <p class="pricing-name"><span>Free</span></p>
+                                <p class="pricing-name"><span>Free</span></p>
                             </div>
                             <div class="pricing-sum-wrapper">
-                               <p class="pricing-sum"><span class="currency">$</span><span class="amount">0</span><span class="per">/per month</span></p>
-                             </div>
+                                <p class="pricing-sum"><span class="currency">$</span><span class="amount">0</span><span
+                                        class="per">/per month</span></p>
+                            </div>
                             <div class="pricing-description-wrapper">
-                                <p class="pricing-description">Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum lacinia consectetur.</p>
+                                <p class="pricing-description">Fusce fermentum placerat magna ac pharetra. Aliquam
+                                    euismod elit non ipsum lacinia consectetur.</p>
                                 <button class="btn btn-outline-primary pricing-order">Order now</button>
                             </div>
                         </div>
@@ -300,13 +323,15 @@
                     <div class="col-xl-3 col-md-6">
                         <div class="pricing-item">
                             <div class="pricing-name-wrapper">
-                               <p class="pricing-name"><span>Personal</span></p>
+                                <p class="pricing-name"><span>Personal</span></p>
                             </div>
                             <div class="pricing-sum-wrapper">
-                               <p class="pricing-sum"><span class="currency">$</span><span class="amount">25</span><span class="per">/per month</span></p>
-                             </div>
+                                <p class="pricing-sum"><span class="currency">$</span><span
+                                        class="amount">25</span><span class="per">/per month</span></p>
+                            </div>
                             <div class="pricing-description-wrapper">
-                                <p class="pricing-description">Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum lacinia consectetur.</p>
+                                <p class="pricing-description">Fusce fermentum placerat magna ac pharetra. Aliquam
+                                    euismod elit non ipsum lacinia consectetur.</p>
                                 <button class="btn btn-outline-primary pricing-order">Order now</button>
                             </div>
                         </div>
@@ -314,13 +339,15 @@
                     <div class="col-xl-3 col-md-6">
                         <div class="pricing-item">
                             <div class="pricing-name-wrapper">
-                               <p class="pricing-name"><span>Business</span></p>
+                                <p class="pricing-name"><span>Business</span></p>
                             </div>
                             <div class="pricing-sum-wrapper">
-                               <p class="pricing-sum"><span class="currency">$</span><span class="amount">50</span><span class="per"> /per month</span></p>
-                             </div>
+                                <p class="pricing-sum"><span class="currency">$</span><span
+                                        class="amount">50</span><span class="per"> /per month</span></p>
+                            </div>
                             <div class="pricing-description-wrapper">
-                                <p class="pricing-description">Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum lacinia consectetur.</p>
+                                <p class="pricing-description">Fusce fermentum placerat magna ac pharetra. Aliquam
+                                    euismod elit non ipsum lacinia consectetur.</p>
                                 <button class="btn btn-outline-primary pricing-order">Order now</button>
                             </div>
                         </div>
@@ -328,13 +355,15 @@
                     <div class="col-xl-3 col-md-6">
                         <div class="pricing-item">
                             <div class="pricing-name-wrapper">
-                               <p class="pricing-name"><span>Ultimate</span></p>
+                                <p class="pricing-name"><span>Ultimate</span></p>
                             </div>
                             <div class="pricing-sum-wrapper">
-                               <p class="pricing-sum"><span class="currency">$</span><span class="amount">99</span><span class="per">/per month</span></p>
-                             </div>
+                                <p class="pricing-sum"><span class="currency">$</span><span
+                                        class="amount">99</span><span class="per">/per month</span></p>
+                            </div>
                             <div class="pricing-description-wrapper">
-                                <p class="pricing-description">Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum lacinia consectetur.</p>
+                                <p class="pricing-description">Fusce fermentum placerat magna ac pharetra. Aliquam
+                                    euismod elit non ipsum lacinia consectetur.</p>
                                 <button class="btn btn-outline-primary pricing-order">Order now</button>
                             </div>
                         </div>
@@ -342,30 +371,31 @@
                 </div>
             </div>
         </section>
-        <section class="contact-block">
+        <section class="contact-block" id="contact">
             <div class="container container-info">
                 <h3>Stay in touch</h3>
                 <h2>Contact us</h2>
                 <div class="row">
                     <div class="contact-link-item col-lg-4 col-md-6 col-12">
-                        <img src="img/icons/phone.png"  alt="phone icon">
+                        <img src="img/icons/phone.png" alt="phone icon">
                         <p>
-                            Phone: (415) 124-5678<br>
-                            Fax: (412) 123-8290
+                            <a href="tel:(415)124-5678">Phone: (415) 124-5678</a><br>
+                            <a href="tel:(412) 123-8290">Fax: (412) 123-8290</a>
+
                         </p>
                     </div>
                     <div class="contact-link-item col-lg-4 col-md-6 col-12">
-                        <img src="img/icons/pointer.png"   alt="map marker icon">
+                        <img src="img/icons/pointer.png" alt="map marker icon">
                         <p>
                             1001 Brickell Bay Dr.<br>
                             Suite 1900 <br>
                             Miami, FL 33131
                         </p>
-                    </div>   
+                    </div>
                     <div class="contact-link-item col-lg-4 col-md-6 col-12">
-                        <img src="img/icons/envelope.png"   alt="envelope icon">
+                        <img src="img/icons/envelope.png" alt="envelope icon">
                         <p>
-                            support@yourname.com
+                            <a href="mailto:support@yourname.com">support@yourname.com</a>
                         </p>
                     </div>
                 </div>
@@ -373,10 +403,10 @@
             <div class="container container-form">
                 <div class="contact-form">
                     <form>
-                        <input type="text" placeholder="Name *"/>
-                        <input type="email" placeholder="Email *"/>
-                        <input type="text" placeholder="Subject *"/>
-                        <textarea placeholder="Message *"></textarea>
+                        <input type="text" placeholder="Name *" required/>
+                        <input type="email" placeholder="Email *" required/>
+                        <input type="text" placeholder="Subject *" required/>
+                        <textarea placeholder="Message *" required></textarea>
                         <button type="submit" class="btn btn-outline-primary">Send message</button>
                     </form>
                 </div>
@@ -384,8 +414,8 @@
         </section>
         <div class="map-block">
             <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3593.2323927788857!2d-80.1880259!3d25.7628865!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b7ea6472a221%3A0xc8fa6bf8ce467740!2sReed%20Smith%20LLP!5e0!3m2!1sen!2sua!4v1626634603332!5m2!1sen!2sua"
-            style="border:0;" allowfullscreen="" loading="lazy">
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3593.2323927788857!2d-80.1880259!3d25.7628865!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b7ea6472a221%3A0xc8fa6bf8ce467740!2sReed%20Smith%20LLP!5e0!3m2!1sen!2sua!4v1626634603332!5m2!1sen!2sua"
+                style="border:0;" allowfullscreen="" loading="lazy">
             </iframe>
         </div>
     </div>
@@ -405,4 +435,5 @@
     <script src="node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
     <script src="js/script.js"></script>
 </body>
+
 </html>

@@ -16,7 +16,7 @@ header {
             }
         }
     }
-    @media (max-width:992px) {
+    @media (max-width: 992px) {
         .container {
             .header-content {
                 .image-wrapper {
@@ -36,27 +36,54 @@ header {
     @media (max-width: 768px) {
         .container {
             .header-top {
-                .navigation {
-                    .menu-button {
-                        display: block;
-                        background-color: transparent;
-                        border: none;
-                    }
-                    .nav-menu {
-                        z-index: 1;
-                        background-color: rgba(#000000, 0.9);
-                        text-align: center;
-                        position: fixed;
-                        height: 100%;
-                        width: 40%;
-                        top: 0;
-                        left: 100%;
-                        ul {
-                            position: relative;
-                            top: 25%;
-                            transform: translate(-50% -50%);
-                            li {
-                                display: block;
+                width: 100%;
+                position: fixed;
+                z-index: 10;
+                .container {
+                    padding: 0 30px;
+                    width: 100%;
+                    background: 
+                    linear-gradient(to left, 
+                        rgba(black, 0.01) 0%, 
+                        rgba(black, 0.35) 10%, 
+                        rgba(black, 0.6) 45%, 
+                        rgba(black, 0.6) 65%, 
+                        rgba(black, 0.35) 90%, 
+                        rgba(black, 0.01) 100%);
+                    .navigation {
+                        .menu-button {
+                            display: block;
+                            background-color: transparent;
+                            border: none;
+                        }
+                        .nav-menu {
+                            z-index: 1;
+                            background: 
+                            linear-gradient(to left,
+                                rgba(black, 1) 0%, 
+                                rgba(black, 0.9) 50%, 
+                                rgba(black, 0.0) 100%);
+                            text-align: right;
+                            padding-right: 150px;
+                            position: fixed;
+                            height: 100%;
+                            width: 100%;
+                            top: 0;
+                            left: 100%;
+                            ul {
+                                position: relative;
+                                top: 25%;
+                                transform: translate(-50% -50%);
+                                li {
+                                    display: block;
+                                    &:hover {
+                                        background: none;
+                                        border-width: 0;
+                                        border-right: 10px solid;
+                                        border-image: linear-gradient(to left, rgba(#008ed6, 0.7) 0%, rgba(#008ed6, 0.5) 20%, rgba(#008ed6, 0.0) 100%) 1 100%;
+                                        transition: border-width 0.2s ease-out;
+                                    }
+                                }
                             }
                         }
                     }
@@ -67,9 +94,27 @@ header {
     @media (max-width: 576px) {
         .container {
             .header-top {
-                .navigation {
-                    .nav-menu {
-                        width: 100%;
+                width: 100%;
+                padding-right: 25px;
+                .container {
+                    .navigation {
+                        .nav-menu {
+                            width: 100%;
+                            background: rgba(#000000, 0.9);
+                            text-align: center;
+                            padding-right: 0;
+                            ul {
+                                li {
+                                    margin-left: 0px;
+                                    &:hover {
+                                        background-position: bottom;
+                                        border-width: 0;
+                                        border-bottom: 10px solid;
+                                        border-image: linear-gradient(to top, rgba(#008ed6, 0.7) 0%, rgba(#008ed6, 0.5) 20%, rgba(#008ed6, 0.0) 100%) 47% 0%;
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             }
