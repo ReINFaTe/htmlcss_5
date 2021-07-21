@@ -20,10 +20,17 @@
         .contact-link-item  {
             &:first-child{
                 padding-right: 20px;
+                p {
+                    padding-right: 5px;
+                }
             }
             &:last-child{
                 padding-top: 2px;
                 padding-left: 18px;
+                p {
+                    margin-top: 31px;
+                    margin-left: 1px;
+                }
             }
         }
     }

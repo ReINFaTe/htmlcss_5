@@ -18,18 +18,22 @@
                 }
                 h2 {
                     padding-bottom: 27px;
+                    letter-spacing: 0.0px;
                 }
                 p {
                     margin-top: 25px;
                     margin-bottom: 25px;
                     padding-right: 95px;
+                    letter-spacing: 0.033px;
 
                 }
                 ul {
                     padding-left: 0px;
                     list-style: none;
+                    letter-spacing: 0.02px;
+
                     li {
-                        padding-left: 25px;
+                        padding-left: 25.5px;
                         &:nth-child(1) {
                             background: url(img/icons/cup.png) no-repeat left;
                         }
