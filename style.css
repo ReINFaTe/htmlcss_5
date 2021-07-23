@@ -2767,9 +2767,9 @@ header .container .header-content .image-wrapper img {
 .contact-block .container-form .contact-form form input, .contact-block .container-form .contact-form form textarea {
   background-color: rgba(0, 142, 214, 0);
   border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
   border-radius: 3px;
   position: relative;
-  color: white;
   padding-top: 2px;
   padding-left: 16px;
 }

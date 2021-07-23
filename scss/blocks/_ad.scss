@@ -1,5 +1,5 @@
 .ad-block {
-    background-color: #15141a;
+    background-color: $ad-block-background;
     .container {
         padding: 60px 0;
         height: 100%;
@@ -9,7 +9,7 @@
             display: inline-block;
             font-size: 36px;
             line-height: 48px;
-            color: #ffffff;
+            color: $h-text-color;
             margin: auto 0;
             margin-right: auto;
             span {
@@ -29,14 +29,14 @@
             margin-left: auto;
             .btn {
                 line-height: 48px;
-                color: #ffffff;
+                color: $h-text-color;
                 width: 160px;
                 height: 50px;
-                background-color: rgba(0,142,214,0.0);
-                border: 1px solid rgba(255,255,255,0.2);
+                background-color: $ad-btn-background;
+                border: 1px solid $ad-btn-border;
                 &:hover {
-                    background-color: #008ed6;
-                    box-shadow: 0px 0px 3px 0px rgba(3,3,3,0.1);
+                    background-color: $ad-btn-hover;
+                    box-shadow: 0px 0px 3px 0px $ad-btn-box-shadow;
                 }
                 &:first-child{
                     margin-right: 17px;

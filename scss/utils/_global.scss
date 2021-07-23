@@ -34,7 +34,7 @@ h3 {
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 0.1em;
-    color: #008ed6;
+    color: $h3-default-color;
 
 }
 h2 {
@@ -43,7 +43,7 @@ h2 {
     text-align: center;
     text-transform: none;
     letter-spacing: normal;
-    color: #1a1a1a;
+    color: $h2-default-color;
     background-image: linear-gradient(to right,#008ed6 47%, transparent 47%, transparent 53%, #008ed6 53%);
     background-position: bottom;
     background-size: 42px 2px;

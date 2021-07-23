@@ -4,7 +4,7 @@
     .container {
         h2 {
             margin-top: 10px;
-            color: #ffffff;
+            color: $h-text-color;
             padding-bottom: 31px;
         }
         padding-top: 61px;
@@ -16,7 +16,7 @@
                 font-size: 24px;
                 line-height: 32px;
                 font-weight: 400;
-                color: #ffffff;
+                color: $h-text-color;
                 padding-right: 20px;
                 .text {
                    font-style: italic;
@@ -36,7 +36,7 @@
                     .user-name {
                         font-size: 16px;
                         font-weight: 400;
-                        color: #ffffff;
+                        color: $h-text-color;
                     }
                     .user-position {
                         font-size: 14px;
@@ -58,20 +58,20 @@
                     width: 14px;
                     height: 14px;
                     border-radius: 50%;
-                    box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.2);
+                    box-shadow: inset 0 0 0 2px $owl-dot-box-shadow;
                     border: 3px solid transparent;
                     background: none;
                     opacity: 1;
                     margin: 6px 8px;
                     &:hover {
-                        background: #fff; 
-                        border-color: #fff;
+                        background: $owl-dot-hover-color; 
+                        border-color: $owl-dot-hover-color;
                     }
                 }
                 &.active {
                     span {
-                        background: #fff; 
-                        border-color: #fff;
+                        background: $owl-dot-hover-color; 
+                        border-color: $owl-dot-hover-color;
                     }
                 }
             }

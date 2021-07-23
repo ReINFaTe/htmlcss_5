@@ -1,38 +1,31 @@
-// @use "../node_modules/bootstrap/scss/bootstrap";
+@import "vendor/bootstrap";
+@import "vendor/owl.carousel";
 
-// $fa-font-path: "../node_modules/@fortawesome/fontawesome-free/webfonts/";
-// @use "../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
-// @use "../node_modules/@fortawesome/fontawesome-free/scss/regular.scss";
-// @use "../node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
+@import "utils/colors";
 
-
-@use "vendor/bootstrap";
-@use "vendor/owl.carousel";
-
-
-@use "fonts";
-@use "global";
+@import "utils/fonts";
+@import "utils/global";
 
 // Main(desktop) blocks files
-@use "blocks/header";
-@use "blocks/product-overview";
-@use "blocks/about-blocks";
-@use "blocks/beautiful";
-@use "blocks/customize";
-@use "blocks/comments";
-@use "blocks/ad";
-@use "blocks/pricing";
-@use "blocks/contact";
-@use "blocks/map";
-@use "blocks/footer";
+@import "blocks/header";
+@import "blocks/product-overview";
+@import "blocks/about-blocks";
+@import "blocks/beautiful";
+@import "blocks/customize";
+@import "blocks/comments";
+@import "blocks/ad";
+@import "blocks/pricing";
+@import "blocks/contact";
+@import "blocks/map";
+@import "blocks/footer";
 
 //Media blocks files;
-@use "media/header-media";
-@use "media/product-overview-media";
+@import "media/header-media";
+@import "media/product-overview-media";
 
-@use "media/pricing-media";
-@use "media/beautiful-media";
-@use "media/customize-media";
-@use "media/ad-media";
-@use "media/contact-media";
-@use "media/footer-media";
+@import "media/pricing-media";
+@import "media/beautiful-media";
+@import "media/customize-media";
+@import "media/ad-media";
+@import "media/contact-media";
+@import "media/footer-media";

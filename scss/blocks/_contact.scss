@@ -1,5 +1,5 @@
 .contact-block {
-    background-color: #ededed;
+    background-color: $contact-background-color;
     padding-top: 57px;
     max-height: 717px;
     h2 {
@@ -11,7 +11,7 @@
         font-size: 18px;
         line-height: 26px;
         font-weight: 400;
-        color: #999999;
+        color: $p-text-color;
     }
     .row {
         margin-top: 59px;
@@ -19,7 +19,7 @@
         row-gap: 20px;
         a {
             &:hover {
-                color: blueviolet;
+                color: $contact-link-hover;
             }
         }
         .contact-link-item  {
@@ -46,7 +46,7 @@
             position: relative;
             width: min-content;
             margin: 0 auto;
-            background-color: #15141a;
+            background-color: $contact-form-background-color;
             form {
                 display: grid;
                 grid-template-areas: 
@@ -57,11 +57,11 @@
                 grid-template-columns: 300px 319px;
                 font-size: 14px;
                 input, textarea {
-                    background-color: rgba(0,142,214,0.0);
-                    border: 1px solid rgba(255,255,255,0.2);
+                    background-color: $contact-form-input-background;
+                    border: 1px solid $contact-form-input-border;
+                    color: $contact-form-input-text-color;
                     border-radius: 3px;
                     position: relative;
-                    color: white;
                     padding-top: 2px;
                     padding-left: 16px;
                     &::placeholder {
@@ -69,7 +69,7 @@
                         opacity: 0.2;
                         font-weight: 700;
                         text-transform: uppercase;
-                        color: #ffffff;
+                        color: $h-text-color;
                     }
                 }
                 input {
@@ -100,11 +100,11 @@
                     margin-top: 21px;
                     text-transform: uppercase;
                     font-weight: 700;
-                    color: #ffffff;
-                    border: 1px solid rgba(255,255,255,0.2);
-                    background-color: rgba(0,142,214,0.0);
+                    color: $h-text-color;
+                    border: 1px solid $contact-form-submit-border;
+                    background-color: $contact-form-submit-background;
                     &:hover {
-                        background-color: #008ed6;
+                        background-color: $contact-form-submit-hover;
                         border-color: transparent;
                     }
         
